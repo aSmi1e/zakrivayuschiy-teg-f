@@ -380,10 +380,4 @@ svg .main-body {
     width: 21px;
     height: 21px;
   }
-
-  .footer-button {
-    flex-direction: row;
-    min-width: 335px;
-    min-height: 55px;
-  }
 }
