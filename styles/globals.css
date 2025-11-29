@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: var(--main-text-size);
+  font-size: var(--font-size-base);
   line-height: 100%;
 }
 

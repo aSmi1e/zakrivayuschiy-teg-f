@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-primary), fantasy;
   font-variation-settings: 'wght' var(--font-weight-regular), 'wdth' var(--font-width-normal);
 }
 
@@ -15,7 +15,7 @@
   margin-block-start: 100px;
   margin-block-end: 98px;
   border: 2px solid var(--color-accent);
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), fantasy;
   text-align: center;
   padding-top: var(--padding-header);
   padding-bottom: var(--padding-header);
@@ -60,42 +60,44 @@
 .image-wrapper img {
   width: 100%;
   aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
 }
 
-.inspiring-filter {
+.filter-brightness-contrast {
   filter: brightness(110%) contrast(120%);
 }
 
-.cool-filter {
+.filter-hue-rotate {
   filter: hue-rotate(-90deg);
 }
 
-.memory-filter {
+.filter-grayscale {
   filter: grayscale(1);
 }
 
-.vivid-filter {
+.filter-saturate-contrast {
   filter: saturate(2) contrast(140%);
 }
 
-.inverted-filter {
+.filter-invert {
   filter: invert(1);
 }
 
-.complex-filter {
+.filter-multiple {
   filter: contrast(1.5) brightness(0.8) grayscale(0.3);
 }
 
-.blurred-filter {
+.filter-blur {
   filter: blur(0.2rem);
 }
 
-.vintage-filter {
+.filter-sepia {
   filter: sepia(0.6);
 }
 
 .image-logo {
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), fantasy;
   font-size: 14px;
   text-shadow:
           -1px 0 #fff,
@@ -127,7 +129,7 @@
 
 button {
   background-color: var(--color-background);
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), fantasy;
   font-size: 14px;
   border: none;
   line-height: 90%;
@@ -235,7 +237,7 @@ button:not(.card__icon-button) svg {
 }
 
 .dialog {
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), fantasy;
   padding: 30px 40px;
   max-width: 353px;
 }
