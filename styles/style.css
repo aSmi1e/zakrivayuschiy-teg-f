@@ -1,20 +1,20 @@
 .page {
   min-inline-size: 320px;
   block-size: 100%;
-  background-image: var(--bg-image);
+  background-image: var(--gradient-background);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--font-family-primary);
-  font-variation-settings: 'wght' var(--weight-regular), 'wdth' var(--wdth);
+  font-variation-settings: 'wght' var(--font-weight-regular), 'wdth' var(--font-width-normal);
 }
 
 .header {
-  background-color: var(--bg-color);
+  background-color: var(--color-background);
   margin-block-start: 100px;
   margin-block-end: 98px;
-  border: 2px solid var(--themes-color);
+  border: 2px solid var(--color-accent);
   font-family: var(--font-family-secondary);
   text-align: center;
   padding-top: var(--padding-header);
@@ -22,20 +22,20 @@
 }
 
 .header .main-title {
-  font-size: var(--title-size);
+  font-size: var(--font-size-title);
   margin-bottom: 20px;
   line-height: 100%;
 }
 
 .header p {
-  font-size: var(--header-text-size);
+  font-size: var(--font-size-header);
   text-transform: uppercase;
   line-height: 100%;
 }
 
 .card {
-  background-color: var(--bg-color);
-  border: 2px solid var(--themes-color);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-accent);
 }
 
 .card:not(:first-child) {
@@ -47,7 +47,7 @@
 }
 
 .card-header h2 {
-  font-variation-settings: 'wght' var(--weight-bold), 'wdth' var(--wdth);
+  font-variation-settings: 'wght' var(--font-weight-bold), 'wdth' var(--font-width-normal);
   line-height: 1.2;
   letter-spacing: 0;
   vertical-align: middle;
@@ -126,7 +126,7 @@
 }
 
 button {
-  background-color: var(--bg-color);
+  background-color: var(--color-background);
   font-family: var(--font-family-secondary);
   font-size: 14px;
   border: none;
@@ -141,8 +141,8 @@ button:hover {
 button:not(.card__icon-button) {
   position: relative;
   overflow: hidden;
-  border: 2px solid var(--themes-color);
-  color: var(--themes-color);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
 }
 
 .card__icon-button {
@@ -153,12 +153,12 @@ button:not(.card__icon-button) {
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--themes-color);
+  outline: 2px solid var(--color-accent);
 }
 
 button:not(.card__icon-button):focus {
   outline: none;
-  box-shadow: 2px 2px 0 var(--themes-color);
+  box-shadow: 2px 2px 0 var(--color-accent);
 }
 
 button:not(.card__icon-button)::before {
@@ -168,7 +168,7 @@ button:not(.card__icon-button)::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--themes-color);
+  background: var(--color-accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
@@ -180,13 +180,13 @@ button:not(.card__icon-button):hover::before {
 
 button:not(.card__icon-button) .button__text {
   z-index: 10;
-  color: var(--bg-color);
+  color: var(--color-background);
   mix-blend-mode: difference;
 }
 
 button:not(.card__icon-button) svg {
   z-index: 10;
-  color: var(--bg-color);
+  color: var(--color-background);
   position: relative;
   mix-blend-mode: difference;
 }
@@ -284,6 +284,7 @@ svg .sparks {
 
 svg .contour {
   transition: fill 0.1s linear;
+  fill: var(--color-heart-contour);
 }
 
 svg .core {
@@ -301,37 +302,37 @@ svg .main-body {
 }
 
 .like-icon:hover .core {
-  fill: var(--heart-contour-color);
+  fill: var(--color-heart-contour);
   transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
-  fill: var(--heart-contour-color);
+  fill: var(--color-heart-contour);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .core {
-  fill: var(--animation-fill-color);
+  fill: var(--color-heart-active);
   transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
-  fill: var(--animation-fill-color);
+  fill: var(--color-heart-active);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--animation-fill-color);
+  fill: var(--color-heart-active);
   transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .core {
-  fill: var(--animation-fill-color);
+  fill: var(--color-heart-active);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--animation-fill-color);
+  fill: var(--color-heart-active);
   transition: fill 0.3s linear 0.05s;
 }
 

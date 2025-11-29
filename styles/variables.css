@@ -1,5 +1,12 @@
 :root {
-    --bg-image:
+    /* Colors */
+    --color-background: #FFF;
+    --color-accent: #000;
+    --color-heart-contour: #000;
+    --color-heart-active: #FF0000;
+
+    /* Gradients */
+    --gradient-background:
             repeating-linear-gradient(
                     90deg,
                     #d3d3d3 0px,
@@ -20,22 +27,19 @@
                     #e7e7e7 0.01%,
                     #1a1a1a 100%
             );
-    --bg-color: #FFF;
-    --themes-color: #000;
 
-    --heart-contour-color: #000;
-    --animation-fill-color: #FF0000;
-
-    --wdth: 100;
-    --weight-regular: 410;
-    --weight-bold: 715;
-
+    /* Typography */
     --font-family-primary: 'Inter-Variable', sans-serif;
     --font-family-secondary: 'PressStart2P', fantasy;
-    --text-regular: 400;
-    --main-text-size: 18px;
-    --title-size: clamp(49px, 4.5vw, 65px);
-    --header-text-size: clamp(14px, 1.5972vw, 23px);
+    --font-size-base: 18px;
+    --font-size-title: clamp(49px, 4.5vw, 65px);
+    --font-size-header: clamp(14px, 1.5972vw, 23px);
 
+    /* Font weights */
+    --font-weight-regular: 410;
+    --font-weight-bold: 715;
+    --font-width-normal: 100;
+
+    /* Spacing */
     --padding-header: clamp(6.78rem, 5.5rem + 1.91vw, 7.23rem);
 }
