@@ -127,7 +127,7 @@
   padding: 25px;
 }
 
-button {
+.button {
   background-color: var(--color-background);
   font-family: var(--font-family-secondary), fantasy;
   font-size: 14px;
@@ -136,34 +136,23 @@ button {
   transition: box-shadow 0.3s ease;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
 }
 
-button:not(.card__icon-button) {
+.button--text {
   position: relative;
   overflow: hidden;
   border: 2px solid var(--color-accent);
   color: var(--color-accent);
 }
 
-.card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: outline 0.3s ease;
-}
-
-.card__icon-button:focus-visible {
-  outline: 2px solid var(--color-accent);
-}
-
-button:not(.card__icon-button):focus {
+.button--text:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--color-accent);
 }
 
-button:not(.card__icon-button)::before {
+.button--text::before {
   content: '';
   position: absolute;
   top: 0;
@@ -176,21 +165,32 @@ button:not(.card__icon-button)::before {
   transition: transform 0.5s ease-in-out;
 }
 
-button:not(.card__icon-button):hover::before {
+.button--text:hover::before {
   transform: scaleX(1);
 }
 
-button:not(.card__icon-button) .button__text {
+.button--text .button__text {
   z-index: 10;
   color: var(--color-background);
   mix-blend-mode: difference;
 }
 
-button:not(.card__icon-button) svg {
+.button--text svg {
   z-index: 10;
   color: var(--color-background);
   position: relative;
   mix-blend-mode: difference;
+}
+
+.button--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: outline 0.3s ease;
+}
+
+.button--icon:focus-visible {
+  outline: 2px solid var(--color-accent);
 }
 
 .flex-button {
