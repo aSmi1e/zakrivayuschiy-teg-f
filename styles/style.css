@@ -19,7 +19,6 @@
   text-align: center;
   padding-top: var(--padding-header);
   padding-bottom: var(--padding-header);
-  min-height: 368px; /* Добавлено минимальной высоты */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,7 +354,6 @@ svg .main-body {
 
 @media (width <= 375px) {
   .header {
-    min-height: 327px;
     margin-block-end: 100px;
   }
 
