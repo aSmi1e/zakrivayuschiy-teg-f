@@ -214,8 +214,8 @@
 }
 
 .footer-button svg {
-  width: 28px;
-  height: 28px;
+  width: 21px;
+  height: 21px;
 }
 
 .button-text {
@@ -352,10 +352,10 @@ svg .main-body {
   transform-origin: center;
 }
 
-@media (min-width: 375px) {
+@media (width <= 375px) {
 
   .header .main-title {
-    line-height: 95%;
+    line-height: 100%;
   }
 
   .footer-button svg {
@@ -364,7 +364,13 @@ svg .main-body {
   }
 
   .footer-button {
+    flex-direction: column;
     min-width: 306px;
     min-height: 84px;
+  }
+
+  .dialog {
+    padding: 30px 40px;
+    max-width: 341px;
   }
 }
