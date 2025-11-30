@@ -39,11 +39,10 @@
 .card {
   background-color: var(--color-background);
   border: 2px solid var(--color-accent);
-  min-height: 956px; /* Добавлено минимальной высоты */
 }
 
 .card:not(:first-child) {
-  margin-top: 50px; /* Отступ между карточками */
+  margin-top: 50px;
 }
 
 .card-header {
@@ -207,8 +206,9 @@
 }
 
 .footer-button {
-  min-width: 306px;
-  min-height: 84px;
+  flex-direction: row;
+  min-width: 335px;
+  min-height: 54px;
   gap: 8px;
   margin: 50px auto 100px;
 }
@@ -352,30 +352,19 @@ svg .main-body {
   transform-origin: center;
 }
 
-@media (width <= 375px) {
-  .header {
-    margin-block-end: 100px;
-  }
+@media (min-width: 375px) {
 
-  .card:not(:first-child) {
-    margin-top: 50px;
-  }
-
-  .image-wrapper img {
-    min-height: 371px;
-  }
-
-  .card-content .text-wrapper {
-    padding: 25px;
-  }
-
-  .footer-button {
-    margin: 50px auto 100px;
-    line-height: 21px;
+  .header .main-title {
+    line-height: 95%;
   }
 
   .footer-button svg {
-    width: 21px;
-    height: 21px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-button {
+    min-width: 306px;
+    min-height: 84px;
   }
 }
